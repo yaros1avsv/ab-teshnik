@@ -1,0 +1,18 @@
+# Данные тестов (создаются автоматически)
+briefs/
+scripts/
+
+# Исходные n8n воркфлоу (справочные, не нужны в проде)
+A_B*.json
+css.json
+
+# Claude Code internal
+.claude/settings.local.json
+.claude/projects/
+.claude/agent-memory*/
+.history/
+
+# OS
+.DS_Store
+node_modules/
+__pycache__/
