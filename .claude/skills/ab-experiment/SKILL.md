@@ -17,11 +17,19 @@ user-invocable: false
 
 ## 3. Создать Feature Flag
 
-MCP PostHog tool `create-feature-flag` с 50/50 сплитом (control + test).
+MCP PostHog tool `create-feature-flag`:
+- `key` — snake_case ключ из шага 2
+- `name` — человекочитаемое название
+- `filters` — 50/50 сплит: variants control + test по 50%
+- `active` — true
 
 ## 4. Создать Эксперимент
 
-MCP PostHog tool `experiment-create`: name, description (гипотеза), feature_flag_key, start_date (сегодня).
+MCP PostHog tool `experiment-create`:
+- `name` — название + дата
+- `description` — гипотеза из брифа
+- `feature_flag_key` — ключ флага
+- `start_date` — сегодня ISO
 
 ## 5. Вывести результат
 
@@ -44,4 +52,4 @@ Feature flag: [ключ] (создан, активен)
 
 ## Если эксперимент уже есть
 
-Если в брифе уже есть `posthog` — спроси: «Эксперимент уже создан. Создать новый или `/ab-results`?»
+Если в брифе уже есть `posthog` — спроси: «Эксперимент уже создан. Создать новый или показать результаты?»

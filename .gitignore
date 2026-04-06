@@ -11,8 +11,11 @@ css.json
 .claude/projects/
 .claude/agent-memory*/
 .history/
+.env
 
 # OS
 .DS_Store
 node_modules/
 __pycache__/
+
+API_INT.MD
